@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>COULEE DOUCE</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="logo">
+                <a href="./accueil.html">
+                    <img src="../img/doucy_titre.png" alt="Logo" width="100" height="50">
+                </a>
+            </div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="./accueil.html">ACCUEIL</a></li>
+                    <li><a href="./actions.html">NOS ACTIONS</a></li>
+                    <li><a href="./rejoindre.html">NOUS AIDER</a></li>
+                    <li><a href="./propos.html">A PROPOS</a></li>
+                    <li id="aqua"><a href="./aquarium.html">AQUARIUM VIRTUEL</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contents">
+            <h2>Rejoins nous pour recevoir ton t shirt solidaire</h2>
+            <div class="shirt-slider">
+                <div class="shirt-slider-inner">
+                    <div class="shirt-item">
+                        <img alt="1" height="200" src="../img/tshirt/1.PNG" width="300"/>
+                    </div>
+                    <div class="shirt-item">
+                        <img alt="1" height="200" src="../img/tshirt/2.PNG" width="300"/>
+                    </div>
+                    <div class="shirt-item">
+                        <img alt="1" height="200" src="../img/tshirt/3.PNG" width="300"/>
+                    </div>
+                    <div class="shirt-item">
+                        <img alt="1" height="200" src="../img/tshirt/4.PNG" width="300"/>
+                    </div>
+                    <div class="shirt-item">
+                        <img alt="1" height="200" src="../img/tshirt/5.PNG" width="300"/>
+                    </div>
+                    <div class="shirt-item">
+                        <img alt="1" height="200" src="../img/tshirt/6.PNG" width="300"/>
+                    </div>
+                    <div class="shirt-item">
+                        <img alt="1" height="200" src="../img/tshirt/7.PNG" width="300"/>
+                    </div>
+                    <div class="shirt-item">
+                        <img alt="1" height="200" src="../img/tshirt/8.PNG" width="300"/>
+                    </div>
+                    <div class="shirt-item">
+                        <img alt="1" height="200" src="../img/tshirt/9.PNG" width="300"/>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button id="prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="title">Comment nous aider ?</h1>
+            <div class="grid">
+                <!-- Form to Join the Association -->
+                <div class="form-container">
+                    <h2 class="form-title">Rejoindre l'Association</h2>
+                    <form id="joinForm">
+                        <div class="form-group">
+                            <label for="name">Nom Prénom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="joinEmail" name="email" required>
+                            <p id="joinEmailError" class="error-message hidden">Veuillez entrer une adresse email valide.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Numéro de Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="centre">Centre</label>
+                            <select id="centre" name="centre" required>
+                                <option value="">Sélectionnez un centre</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Rejoindre et recevoir mon t-shirt</button>
+                    </form>
+                </div>
+    
+                <!-- Form to Donate -->
+                <div class="form-container">
+                    <h2 class="form-title">Donner à l'Association</h2>
+                    <form id="donateForm">
+                        <div class="form-group">
+                            <label for="donorName">Nom Prénom</label>
+                            <input type="text" id="donorName" name="donorName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorEmail">Email</label>
+                            <input type="email" id="donateEmail" name="donorEmail" required>
+                            <p id="donateEmailError" class="error-message hidden">Veuillez entrer une adresse email valide.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Montant du Don</label>
+                            <input type="number" id="amount" name="amount" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Donner</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="map-container">
+                <h2 class="form-title">Localisation des Centres</h2>
+                <div id="map"></div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="navigation">
+                        <ul>
+                            <li><h1>Navigation</h1></li>
+                            <li><a href="./accueil.html">Accueil</a></li>
+                            <li><a href="./actions.html">Nos actions</a></li>
+                            <li><a href="./rejoindre.html">Rejoignez-nous</a></li>
+                            <li><a href="./propos.html">À propos</a></li>
+                            <li><a href="./aquarium.html">AQUARIUM VIRTUEL</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <ul>
+                            <li><h1>Contact</h1></li>
+                            <li><a href="mailto:contact@couleedouce.fr">contact@couleedouce.fr</a></li>
+                            <li><p>Paris, France</p></li>
+                        </ul>
+                    </div>
+                    <div class="reseaux">
+                        <ul>
+                            <li><h1>Suivez-nous</h1></li>
+                            <li>
+                                <a href="https://www.youtube.com" target="_blank">
+                                    <img src="../img/reseaux/youtube.png">
+                                </a>
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <img src="../img/reseaux/instagram.png" alt="Instagram" title="Instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>©️2024 ODD14 - Coulée douce. Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
